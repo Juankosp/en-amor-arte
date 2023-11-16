@@ -19,14 +19,14 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Jardín Botánico de Cartagena # the title of your site should go here
+title: EnAmorArte # the title of your site should go here
 email: your-email@example.com
 description: >- # this means to ignore newlines (until baseurl:)
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://cartagena-botanical-garden.hp.gbif.org/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://en-amor-arte.ar/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: yourname # if you have an account you want to link to. Else comment this line out
 github_username:  yourname # if you have an account you want to link to. Else comment this line out
 
@@ -40,13 +40,14 @@ remote_theme: gbif/jekyll-hp-base-theme
 
 # For use by the 'standardPrivacy' layout
 privacy:
-  name: Fundación Jardín Botánico Guillermo Piñeres
-  domain: www.jbgp.org.co/en
-  contactEmail: direccion@jbgp.org.co
-  helpdeskEmail: direccion@jbgp.org.co
+
+  name: hi
+  domain: hi
+  contactEmail: hi 
+  helpdeskEmail: hi
 
 algae:
-  rootLang: en
+  rootLang: es
   # latestPostLimit: 2
   # logo: /assets/images/placeholders/logo.png  # Logo in navbar, will be displayed with 28px height
   logo: assets/images/Logo_JBC_negro_sinfondo.png
@@ -94,25 +95,20 @@ defaults:
       path: "" # an empty string here means all files in the project
     values:
       layout: "page" # So by default any page will use the layout "page"
-      lang: en # And have the default language english
+      lang: es # And have the default language english
   - scope:
       path: "_posts" # an empty string here means all files in the project
     values:
       layout: "post"
       permalink: "/post/:year/:slug/"   # Use /post/yyyy/{filename}/ as permalink for all posts
   - scope:
-      path: "en/" # For anything in the "da" folder the default is to set the lang frontMatter property to "da" . this should be deleted or adapted to your site if you support other languages
+      path: "es/" # For anything in the "da" folder the default is to set the lang frontMatter property to "da" . this should be deleted or adapted to your site if you support other languages
     values:
-      lang: en
+      lang: es
   - scope:
       path: "_posts/en/" # an empty string here means all files in the project
       type: "posts"
     values:
       layout: "post"
-      permalink: "/en/post/:year/:slug/"   # Use /post/yyyy/{filename}/ as permalink for all posts
-  -
-    scope:
-      path: "es/"
-    values:
-      lang: es
+      permalink: "/es/post/:year/:slug/"   # Use /post/yyyy/{filename}/ as permalink for all posts
 

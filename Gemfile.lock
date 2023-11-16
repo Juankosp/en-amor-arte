@@ -1,6 +1,5 @@
 GIT
-  remote: https://github.com/gbif/jekyll-thumbor
-  revision: 77df45e674bdc09089b9b21610608a6bc847cda0
+  remote: https://github.com/Juankosp/en-amor-arte
   specs:
     jekyll-thumbor (0.0.1)
       jekyll
